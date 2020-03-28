@@ -13,8 +13,6 @@
 		77BFF544242FCEF700F1FAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BFF542242FCEF700F1FAE5 /* Main.storyboard */; };
 		77BFF546242FCEFB00F1FAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BFF545242FCEFB00F1FAE5 /* Assets.xcassets */; };
 		77BFF549242FCEFB00F1FAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BFF547242FCEFB00F1FAE5 /* LaunchScreen.storyboard */; };
-		77BFF554242FCEFB00F1FAE5 /* MemeMe_ver__2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BFF553242FCEFB00F1FAE5 /* MemeMe_ver__2_0Tests.swift */; };
-		77BFF55F242FCEFB00F1FAE5 /* MemeMe_ver__2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BFF55E242FCEFB00F1FAE5 /* MemeMe_ver__2_0UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +42,7 @@
 		77BFF548242FCEFB00F1FAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77BFF54A242FCEFB00F1FAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77BFF54F242FCEFB00F1FAE5 /* MemeMe ver. 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MemeMe ver. 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77BFF553242FCEFB00F1FAE5 /* MemeMe_ver__2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMe_ver__2_0Tests.swift; sourceTree = "<group>"; };
-		77BFF555242FCEFB00F1FAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77BFF55A242FCEFB00F1FAE5 /* MemeMe ver. 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MemeMe ver. 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77BFF55E242FCEFB00F1FAE5 /* MemeMe_ver__2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMe_ver__2_0UITests.swift; sourceTree = "<group>"; };
-		77BFF560242FCEFB00F1FAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				77BFF53B242FCEF700F1FAE5 /* MemeMe ver. 2.0 */,
-				77BFF552242FCEFB00F1FAE5 /* MemeMe ver. 2.0Tests */,
-				77BFF55D242FCEFB00F1FAE5 /* MemeMe ver. 2.0UITests */,
 				77BFF53A242FCEF700F1FAE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				77BFF54A242FCEFB00F1FAE5 /* Info.plist */,
 			);
 			path = "MemeMe ver. 2.0";
-			sourceTree = "<group>";
-		};
-		77BFF552242FCEFB00F1FAE5 /* MemeMe ver. 2.0Tests */ = {
-			isa = PBXGroup;
-			children = (
-				77BFF553242FCEFB00F1FAE5 /* MemeMe_ver__2_0Tests.swift */,
-				77BFF555242FCEFB00F1FAE5 /* Info.plist */,
-			);
-			path = "MemeMe ver. 2.0Tests";
-			sourceTree = "<group>";
-		};
-		77BFF55D242FCEFB00F1FAE5 /* MemeMe ver. 2.0UITests */ = {
-			isa = PBXGroup;
-			children = (
-				77BFF55E242FCEFB00F1FAE5 /* MemeMe_ver__2_0UITests.swift */,
-				77BFF560242FCEFB00F1FAE5 /* Info.plist */,
-			);
-			path = "MemeMe ver. 2.0UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77BFF554242FCEFB00F1FAE5 /* MemeMe_ver__2_0Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77BFF55F242FCEFB00F1FAE5 /* MemeMe_ver__2_0UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
