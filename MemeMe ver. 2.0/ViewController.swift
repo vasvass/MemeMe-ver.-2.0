@@ -151,12 +151,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
          textField.resignFirstResponder()
      }
     
-    struct Meme {
-        var topText: String
-        var bottomText: String
-        var originalImage: UIImage
-        var memedImage: UIImage
-    }
     
      // MARK: Creatio of a Meme
      
