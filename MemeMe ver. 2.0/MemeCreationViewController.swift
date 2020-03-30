@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MemeCreationViewController.swift
 //  MemeMe ver. 2.0
 //
 //  Created by Vassileios Vassileiades on 28/3/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class MemeCreationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imagePickerView: UIImageView!
     @IBOutlet weak var topTextField: UITextField!
@@ -155,7 +155,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
      // MARK: Creatio of a Meme
      
     func save() {
-        _ = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imagePickerView.image!, memedImage: generateMemedImage())
+        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imagePickerView.image!, memedImage: generateMemedImage())
+        
+        //  Adding a Meme to memes array in the Application Delegate
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.memes.append(meme)
     }
     
     func generateMemedImage() -> UIImage {

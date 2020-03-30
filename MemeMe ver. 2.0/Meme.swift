@@ -6,6 +6,7 @@
 //  Copyright © 2020 Vassileios Vassileiades. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 
