@@ -22,11 +22,18 @@ class SentMemesCollectionViewController: UICollectionViewController {
         return appDelegate.memes
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+       super.viewWillAppear(animated)
+        
+        // Update collection view with new data before view will appear
+       collectionView?.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+      //  self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
             // Flow Layout
             let space:CGFloat = 3.0
@@ -39,11 +46,6 @@ class SentMemesCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
         return memes.count
@@ -52,7 +54,7 @@ class SentMemesCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MemeCollectionViewCell
-    
+        
         let meme = self.memes[indexPath.item]
         
         cell.memeImageView?.image = meme.memedImage

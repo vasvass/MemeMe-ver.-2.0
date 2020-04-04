@@ -204,20 +204,9 @@ class MemeCreationViewController: UIViewController, UIImagePickerControllerDeleg
         bottomToolbar.isHidden=hide
         topToolbar.isHidden=hide
     }
-    
-    // MARK: When cancel button is pressed values return to default
-    
-    func cancel(){
-        topTextField.text="TOP TEXT"
-        bottomTextField.text="BOTTOM TEXT"
-        imagePickerView!.image=nil
-        shareButton.isEnabled=true
-        topTextField.isEnabled = true
-        bottomTextField.isEnabled = true
-     }
 
     @IBAction func cancelEditing(_ sender: Any) {
-        cancel()
+         dismiss(animated: true, completion: nil)
     }
 }
 

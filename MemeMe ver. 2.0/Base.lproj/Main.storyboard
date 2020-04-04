@@ -11,13 +11,13 @@
         <!--Sent Memes-->
         <scene sceneID="2iY-1L-QVZ">
             <objects>
-                <tableViewController id="6St-NN-LBS" sceneMemberID="viewController">
+                <tableViewController id="6St-NN-LBS" customClass="SentMemesTableViewController" customModule="MemeMe_ver__2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GQy-LJ-bLd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="ZVt-e2-tce" customClass="MemeTableViewCell" customModule="MemeMe_ver__2_0" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemeTableViewCell" rowHeight="136" id="ZVt-e2-tce" userLabel="MemeTableViewCell" customClass="MemeTableViewCell" customModule="MemeMe_ver__2_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZVt-e2-tce" id="t9u-1h-SeJ">
@@ -126,7 +126,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeCollectionViewCell" id="1pK-Vr-mu1">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeCollectionViewCell" id="1pK-Vr-mu1" customClass="MemeCollectionViewCell" customModule="MemeMe_ver__2_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="118" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UCf-Uf-Lae">
@@ -141,13 +141,13 @@
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="118" height="137"/>
                                 <connections>
-                                    <outlet property="memeImageView" destination="UCf-Uf-Lae" id="tXc-xX-ZZo"/>
+                                    <outlet property="memeImageView" destination="o3b-Yb-TSd" id="HV2-de-7Nx"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="9q6-oH-2Ya" id="rCx-HE-aK2"/>
-                            <outlet property="delegate" destination="9q6-oH-2Ya" id="gUG-qH-hdL"/>
+                            <outlet property="dataSource" destination="9q6-oH-2Ya" id="WUv-QC-XAV"/>
+                            <outlet property="delegate" destination="9q6-oH-2Ya" id="21v-aY-Wba"/>
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Sent Memes" id="ffl-Lc-sLb">
@@ -316,6 +316,6 @@
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="P9K-u6-Ben"/>
+        <segue reference="eRC-du-9PM"/>
     </inferredMetricsTieBreakers>
 </document>

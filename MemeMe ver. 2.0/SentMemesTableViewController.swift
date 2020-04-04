@@ -8,8 +8,9 @@
 
 import UIKit
 
-class SentMemesTableViewController: UITableViewController {
+class SentMemesTableViewController: UITableViewController  {
     
+    private let reuseIdentifier = "MemeTableViewCell"
     
     var memes: [Meme]! {
         let object = UIApplication.shared.delegate
@@ -20,7 +21,15 @@ class SentMemesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //self.tableView.allowsMultipleSelectionDuringEditing = false
         self.tableView.allowsMultipleSelectionDuringEditing = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        // Update table view with new data before view will appear
+        self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -34,7 +43,7 @@ class SentMemesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         
         let meme = self.memes[(indexPath as NSIndexPath).row]
         
@@ -54,6 +63,11 @@ class SentMemesTableViewController: UITableViewController {
         navigationController!.pushViewController(detailController, animated: true)
     }
 
-
+   override  func tableView(_ tableView: UITableView, commit editingAction: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    
+        if editingAction == .delete {
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 
 }
