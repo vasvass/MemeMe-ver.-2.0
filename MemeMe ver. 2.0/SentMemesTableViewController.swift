@@ -48,9 +48,9 @@ class SentMemesTableViewController: UITableViewController  {
         let meme = self.memes[(indexPath as NSIndexPath).row]
         
         cell.imageView?.image = meme.memedImage
-        //cell.imageView?.image = meme.memedImage
         cell.textLabel?.text = meme.topText + " ... " + meme.bottomText
-       
+        cell.clipsToBounds = true
+        
         return cell
     }
     

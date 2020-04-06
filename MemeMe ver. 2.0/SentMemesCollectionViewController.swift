@@ -32,9 +32,6 @@ class SentMemesCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Register cell classes
-      //  self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
             // Flow Layout
             let space:CGFloat = 3.0
             let dimension = (collectionView.frame.size.width - (2 * space)) / 3.0
