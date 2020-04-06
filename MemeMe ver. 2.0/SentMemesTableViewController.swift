@@ -18,6 +18,8 @@ class SentMemesTableViewController: UITableViewController  {
         return appDelegate.memes
     }
 
+    // MARK: Application States
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -14,6 +14,8 @@ class MemeDetailViewController: UIViewController {
     
     var meme: Meme!
     
+    // MARK: Application States 
+    
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)

@@ -22,6 +22,8 @@ class SentMemesCollectionViewController: UICollectionViewController {
         return appDelegate.memes
     }
 
+    // MARK: Application States
+    
     override func viewWillAppear(_ animated: Bool) {
        super.viewWillAppear(animated)
         
